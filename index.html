@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #2f314a, #5b5f7b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Container Login */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .login-box {
+      background: #9c9ca8;
+      padding: 40px;
+      border-radius: 20px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .login-box .user-icon {
+      width: 80px;
+      height: 80px;
+      background: #1a1a3b;
+      border-radius: 50%;
+      margin: -60px auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-box .user-icon img {
+      width: 40px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .input-group input {
+      width: 100%;              /* ✅ ikut lebar kotak login-box */
+      max-width: 100%;
+      padding: 12px 40px 12px 40px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      box-sizing: border-box;   /* ✅ biar padding gak bikin kepanjangan */
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #333;
+    }
+
+    .input-group .eye {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: #1a1a3b;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #34346a;
+    }
+
+    .forgot {
+      display: block;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="user-icon">
+        <img src="image 10.png" alt="user">
+      </div>
+      <h2>LOG IN</h2>
+
+      <div class="input-group">
+        <i>👤</i>
+        <input type="text" placeholder="username">
+      </div>
+
+      <div class="input-group">
+        <i>🔒</i>
+        <input type="password" placeholder="password">
+        <span class="eye">👁</span>
+      </div>
+
+      <button class="btn">LOG IN</button>
+      <span class="forgot">FORGOT PASSWORD ?</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RStyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #2a3148;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1a1d2e;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar .logo h2 {
+    color: #fff;
+    }
+
+    .hero h1 {
+    color: #fff;
+    }
+
+    .hero p {
+        color: #fff;
+    }
+
+    .best h2 {
+        color: #fff;
+    }
+
+    .navbar .logo img {
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .nav-btn {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #2a3148;
+    }
+
+    .hero h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .desc h3 {
+        color: #fff;
+    }
+
+    .desc p {
+        color: #fff;
+    }
+
+    .cta {
+      background: #DDDDDD;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    
+    }
+
+    .cta:hover {
+      background: #4a5579 80%;
+    }
+
+    /* BEST SELLING */
+    .best {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .best h2 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    /* biar bisa dibalik */
+    .product.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .card {
+      background: #4a5579 80%;;
+      padding: 30px;
+      border-radius: 20px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .desc {
+      flex: 1;
+      text-align: left;
+    }
+
+    .desc h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #141642;
+      color: #fff;
+      padding: 40px;
+      margin-top: 60px;
+    }
+
+    .footer-top {
+      margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .footer-bottom .col h4 {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .footer-bottom a {
+      display: block;
+      text-decoration: none;
+      color: #bbb;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+
+    .social {
+      text-align: center;
+    }
+
+    .icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="download__11_-removebg-preview 1.png" alt="logo">
+      <h2>RStyle</h2>
+    </div>
+    <nav>
+      <a href="#" class="nav-btn">home</a>
+      <a href="#" class="nav-btn">about</a>
+      <a href="#" class="nav-btn">search</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>“Welcome to Your Creative Space”</h1>
+    <p>
+      Discover thousands of cool Roblox avatar ideas with RStyle! Explore a catalog of outfits, accessories, and aesthetic styles to make your character stand out in every game. Show off your style and become the center of attention in Roblox!
+    </p>
+    <a href="#" class="cta">get started!</a>
+  </section>
+
+  <!-- BEST SELLING -->
+  <section class="best">
+    <h2>OUR BEST SELLING PRODUCT</h2>
+    <div class="product">
+      <div class="card">
+        <img src="user_-_44izz-removebg-preview 1.png" alt="Ice Queen">
+      </div>
+      <div class="desc">
+        <h3>✧ Ice Queen ✧</h3>
+        <p>
+          A majestic avatar inspired by the elegance of ice and snow. Featuring shimmering silver-blue hair, crystal crown, and enchanted icy wings with sparkling effects. Perfect for fantasy, royalty, and winter-themed aesthetics.
+        </p>
+      </div>
+    </div>
+
+    <div class="product reverse">
+      <div class="card">
+        <img src="e_unnii_-_roblox_౨ৎ-removebg-preview 1.png" alt="Gothic Sorceress">
+      </div>
+      <div class="desc">
+        <h3>✧ Gothic Sorceress ✧</h3>
+        <p>
+          A gothic-inspired avatar with elegant dark blue hair, mystical accessories, and a glowing spellbook. Perfect for dark aesthetic, mystery, and magical themes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="contact">
+        <p>📞 121208</p>
+        <p>✉️ @hidupblonde</p>
+        <p>⛰️ everest</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="col">
+        <h4>about</h4>
+        <a href="#">our story</a>
+        <a href="#">awards</a>
+        <a href="#">our team</a>
+        <a href="#">career</a>
+      </div>
+      <div class="col">
+        <h4>company</h4>
+        <a href="#">our services</a>
+        <a href="#">clients</a>
+        <a href="#">contact</a>
+        <a href="#">press</a>
+      </div>
+      <div class="col">
+        <h4>resources</h4>
+        <a href="#">blog</a>
+        <a href="#">newsletter</a>
+        <a href="#">privacy policy</a>
+      </div>
+    </div>
+
+    <div class="social">
+      <div class="icons">
+        <img src="image 15.png" alt="">
+        <img src="image 16.png" alt="user">
+        <img src="image 17.png" alt="user">
+        <img src="image 18.png" alt="user">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
